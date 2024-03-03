@@ -9,7 +9,7 @@ const Navbar = () => {
         </Link>
         <div>
           <ul className="flex gap-8 list-none">
-            <NavLink className="no-underline text-white" to={"/"}>
+            <NavLink className="no-underline text-white" to={"/bookyourtravel"}>
               Find your stay
             </NavLink>
             <NavLink className="no-underline text-white" to={"/"}>
