@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[rgb(4,36,49)] h-28 text-white justify-center text-lg">
       <div className="h-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link to={"/"} className="text-3xl">
+        <Link to={"/"} className="text-3xl no-underline text-white">
           SalamHotels
         </Link>
         <div>
