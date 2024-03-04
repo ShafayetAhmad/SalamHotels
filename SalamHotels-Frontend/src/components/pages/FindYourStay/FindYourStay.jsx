@@ -17,14 +17,14 @@ const FindYourStay = () => {
         }
       ></PageHeader>
       <div className="bg-[rgb(255,245,225)]">
-        <div className="flex max-w-7xl mx-auto ">
+        <div className="flex lg:flex-row flex-col items-center max-w-7xl mx-auto ">
           <div className=" flex-1 my-10">
             <h4 className="uppercase font-extrabold">search</h4>
             <div>
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col gap-3">
                   <label className="text-xl">Destination</label>
-                  <select className="bg-white w-60 h-11 font-serif text-lg pl-3">
+                  <select className="bg-white lg:w-60 w-[340px] h-11 font-serif text-lg pl-3">
                     <option value=""></option>
                     <option className="text-lg" value="barcelona">
                       Barcelona
@@ -40,14 +40,14 @@ const FindYourStay = () => {
                 <div className="flex flex-col gap-3">
                   <label className="text-xl">Check in</label>
                   <input
-                    className="w-56 h-10 text-lg pl-4 font-serif"
+                    className="lg:w-56 w-80 h-10 text-lg pl-4 font-serif"
                     type="date"
                   />
                 </div>
                 <div className="flex flex-col gap-3">
                   <label className="text-xl">Check out</label>
                   <input
-                    className="w-56 h-10 text-lg pl-4 font-serif"
+                    className="lg:w-56 w-80 h-10 text-lg pl-4 font-serif"
                     type="date"
                   />
                 </div>
@@ -74,13 +74,13 @@ const FindYourStay = () => {
                 </label>
               </div>
             </div>
-            <div className="my-8">
+            <div className="my-8 flex justify-center">
               <GreenBtn text={"Apply Filters"} px={16} py={4}></GreenBtn>
             </div>
           </div>
           <div className="flex-4 w-full mx-10 my-10">
             <div
-              className="flex justify-between bg-orange-100  px-4 rounded-xl mb-8"
+              className="flex justify-between bg-orange-100  px-4 rounded-xl mb-8 lg:mx-0 mx-1"
               style={{ border: "1px solid black" }}
             >
               <div>
@@ -129,7 +129,7 @@ const FindYourStay = () => {
               </div>
               <div className="flex w-full justify-between">
                 {listStyle == "grid" && (
-                  <div className="grid-cols-3 grid">
+                  <div className="lg:grid-cols-3 grid-cols-1 grid">
                     <SearchGridItem></SearchGridItem>
                     <SearchGridItem></SearchGridItem>
                     <SearchGridItem></SearchGridItem>
