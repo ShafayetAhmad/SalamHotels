@@ -5,10 +5,10 @@ const Footer = () => {
     <div className="bg-[rgb(4,36,49)] lg:h-96 h-full py-8 text-white  text-lg">
       <div className="h-full flex lg:flex-row flex-col justify-between lg:items-center items-center lg:max-w-7xl lg:mx-auto mx-3">
         <div>
-          <h3 className="text-xl font-medium uppercase text-center ml-6">
+          <h3 className="text-xl font-medium uppercase text-center ">
             For travellers
           </h3>
-          <ul className="list-none text-slate-300 flex flex-col text-center">
+          <div className="list-none text-slate-300 flex flex-col text-center">
             <Link
               to={"register-for-traveler"}
               className="hover:text-white text-slate-300 no-underline"
@@ -27,11 +27,13 @@ const Footer = () => {
             <Link className="hover:text-white text-slate-300 no-underline">
               How it works
             </Link>
-          </ul>
+          </div>
         </div>
         <div>
-          <h3 className="text-xl font-medium uppercase text-center ml-6">For property owners</h3>
-          <ul className="list-none text-slate-300 flex flex-col text-center">
+          <h3 className="text-xl font-medium uppercase text-center ">
+            For property owners
+          </h3>
+          <div className="list-none text-slate-300 flex flex-col text-center">
             <Link
               to={"/register-for-property-owners"}
               className="hover:text-white text-slate-300 no-underline"
@@ -50,7 +52,7 @@ const Footer = () => {
             <Link className="hover:text-white text-slate-300 no-underline">
               How it works
             </Link>
-          </ul>
+          </div>
         </div>
         <div>
           <p className="text-center">Follow us</p>

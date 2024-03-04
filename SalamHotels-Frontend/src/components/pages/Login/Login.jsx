@@ -3,7 +3,7 @@ import GreenBtn from "../../common/GreenBtn/GreenBtn";
 const Login = ({ userType }) => {
   return (
     <div className="bg-[rgb(255,245,225)]">
-      <div className="max-w-7xl mx-auto py-24">
+      <div className="max-w-7xl lg:mx-auto py-24  mx-3">
         <div>
           <h4 className="uppercase font-bold text-2xl m-0">
             Login For {userType}
@@ -41,7 +41,7 @@ const Login = ({ userType }) => {
         </div>
         <div className="w-full ">
           <form>
-            <div className="flex gap-5">
+            <div className="flex lg:flex-row flex-col gap-5">
               <div className="flex flex-col">
                 <label htmlFor="email" className="text-xl  text-gray-700">
                   Email
@@ -50,7 +50,7 @@ const Login = ({ userType }) => {
                   type="text"
                   name="email"
                   id=""
-                  className="w-[500px] h-10 my-2"
+                  className="lg:w-[500px] w-80 h-10 my-2"
                 />
               </div>
               <div className="flex flex-col">
@@ -61,7 +61,7 @@ const Login = ({ userType }) => {
                   type="password"
                   name="password"
                   id=""
-                  className="w-[500px] h-10 my-2"
+                  className="lg:w-[500px] w-80 h-10 my-2"
                 />
               </div>
             </div>

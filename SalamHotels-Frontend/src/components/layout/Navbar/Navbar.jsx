@@ -19,7 +19,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="lg:hidden text-white focus:outline-none"
           >
-            <ImMenu />
+            <ImMenu size={"2rem"} color="black"/>
           </button>
           {isMenuOpen && (
             <div className="lg:hidden absolute top-16 right-0 bg-black">
