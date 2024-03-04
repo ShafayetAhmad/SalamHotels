@@ -3,6 +3,7 @@ import { MdViewList, MdViewModule } from "react-icons/md";
 import { FaSortDown, FaSortUp } from "react-icons/fa6";
 import SearchListItem from "../../layout/SearchListItem/SearchListItem";
 import GreenBtn from "../../common/GreenBtn/GreenBtn";
+import SearchGridItem from "../../layout/SearchGridItem/SearchGridItem";
 const FindYourStay = () => {
   return (
     <div>
@@ -114,6 +115,11 @@ const FindYourStay = () => {
             <div>
               <div>
                 <SearchListItem></SearchListItem>
+              </div>
+              <div className="flex w-full justify-between">
+                <SearchGridItem></SearchGridItem>
+                <SearchGridItem></SearchGridItem>
+                <SearchGridItem></SearchGridItem>
               </div>
             </div>
           </div>

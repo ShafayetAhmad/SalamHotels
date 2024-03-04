@@ -3,11 +3,17 @@ import GreenBtn from "../../common/GreenBtn/GreenBtn";
 const SearchListItem = () => {
   return (
     <div>
-      <div className="grid grid-cols-5 my-4 ">
+      <div
+        className="grid grid-cols-5 py-4 my-2"
+        style={{ borderTop: "1px solid lightgray" }}
+      >
         <div className="col-span-1">
-          <img src={thumb1} className="w-full" alt="" />
+          <img src={thumb1} className="w-48 h-48" alt="" />
         </div>
-        <div className="col-span-3" style={{ borderRight: "1px solid slate" }}>
+        <div
+          className="col-span-3"
+          style={{ borderRight: "1px solid lightgray" }}
+        >
           <div className="px-6 flex flex-col justify-center h-full ">
             <div>
               <h3 className="font-extrabold text-2xl my-0">Title of Place</h3>
