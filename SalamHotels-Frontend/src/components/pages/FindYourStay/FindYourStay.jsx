@@ -80,7 +80,7 @@ const FindYourStay = () => {
           </div>
           <div className="flex-4 w-full mx-10 my-10">
             <div
-              className="flex justify-between bg-orange-100  px-4 rounded-xl"
+              className="flex justify-between bg-orange-100  px-4 rounded-xl mb-8"
               style={{ border: "1px solid black" }}
             >
               <div>
@@ -89,17 +89,6 @@ const FindYourStay = () => {
               <div className="flex gap-5 items-center   ">
                 <div className="flex ">
                   <p className="text-lg">Price</p>
-                  <div className="flex flex-col justify-center m-2">
-                    <button>
-                      <FaSortUp />
-                    </button>
-                    <button>
-                      <FaSortDown />
-                    </button>
-                  </div>
-                </div>
-                <div className="flex">
-                  <p className="text-lg">Rating</p>
                   <div className="flex flex-col justify-center m-2">
                     <button>
                       <FaSortUp />
@@ -140,7 +129,9 @@ const FindYourStay = () => {
               </div>
               <div className="flex w-full justify-between">
                 {listStyle == "grid" && (
-                  <div className="flex">
+                  <div className="grid-cols-3 grid">
+                    <SearchGridItem></SearchGridItem>
+                    <SearchGridItem></SearchGridItem>
                     <SearchGridItem></SearchGridItem>
                     <SearchGridItem></SearchGridItem>
                     <SearchGridItem></SearchGridItem>

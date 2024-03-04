@@ -4,11 +4,11 @@ const AboutOnHome = () => {
   return (
     <div className="bg-[rgb(255,245,225)]">
       <div className="max-w-7xl mx-auto">
-        <div className="flex py-16 gap-16">
-          <div className="flex-2">
-            <img src={ag3} alt="" />
+        <div className="flex lg:flex-row flex-col py-16 gap-16">
+          <div className="lg:flex-2 flex items-center justify-center">
+            <img src={ag3} alt="" className="lg:w-full w-96 " />
           </div>
-          <div className="flex-1 text-xl text-justify">
+          <div className="flex-1 text-xl text-justify mx-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Architecto, magnam vero corporis dolores odio placeat consectetur
             voluptate quibusdam recusandae delectus voluptates iste asperiores
@@ -23,11 +23,11 @@ const AboutOnHome = () => {
             sapiente dolores? Fuga ad illo molestiae!
           </div>
         </div>
-        <div className="flex flex-row-reverse py-16 gap-16">
-          <div className="flex-2">
-            <img src={ag1} alt="" />
+        <div className="flex lg:flex-row-reverse flex-col py-16 gap-16">
+          <div className="lg:flex-2 flex items-center justify-center">
+            <img src={ag1} alt="" className="lg:w-full w-96 " />
           </div>
-          <div className="flex-1 text-xl text-justify">
+          <div className="flex-1 text-xl text-justify mx-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
             cumque deleniti unde neque quaerat rerum est, repudiandae id
             obcaecati sit blanditiis fuga corporis nemo molestias eveniet
