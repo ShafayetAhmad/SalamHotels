@@ -1,4 +1,5 @@
 import HeroImg from "../../../assets/images/hero.jpg";
+import GreenBtn from "../../common/GreenBtn/GreenBtn";
 const Hero = () => {
   return (
     <div>
@@ -50,9 +51,7 @@ const Hero = () => {
                   />
                 </div>
                 <div className=" justify-center flex-col">
-                  <button className="btn uppercase px-16 py-[15px] bg-[rgb(30,109,70)] font-semibold text-white border-none">
-                    search
-                  </button>
+                  <GreenBtn text={"search"} px={16} py={4}></GreenBtn>
                 </div>
               </div>
             </form>

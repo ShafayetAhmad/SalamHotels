@@ -1,5 +1,8 @@
 import PageHeader from "../../layout/PageHeader/PageHeader";
-
+import { MdViewList, MdViewModule } from "react-icons/md";
+import { FaSortDown, FaSortUp } from "react-icons/fa6";
+import SearchListItem from "../../layout/SearchListItem/SearchListItem";
+import GreenBtn from "../../common/GreenBtn/GreenBtn";
 const FindYourStay = () => {
   return (
     <div>
@@ -10,9 +13,9 @@ const FindYourStay = () => {
         }
       ></PageHeader>
       <div className="bg-[rgb(255,245,225)]">
-        <div className="flex max-w-7xl mx-auto">
-          <div className=" flex-1">
-            <h4 className="uppercase">search</h4>
+        <div className="flex max-w-7xl mx-auto ">
+          <div className=" flex-1 my-10">
+            <h4 className="uppercase font-extrabold">search</h4>
             <div>
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col gap-3">
@@ -67,14 +70,52 @@ const FindYourStay = () => {
                 </label>
               </div>
             </div>
-            <button className="btn uppercase px-16 py-4 my-4 bg-[rgb(30,109,70)] text-base font-semibold text-white border-none">
-              Apply Filters
-            </button>
+            <div className="my-8">
+              <GreenBtn text={"Apply Filters"} px={16} py={4}></GreenBtn>
+            </div>
           </div>
-          <div className="flex-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-            magni explicabo quas eaque, saepe deleniti vitae repudiandae eum
-            nisi numquam.
+          <div className="flex-4 w-full mx-10 my-10">
+            <div
+              className="flex justify-between bg-orange-100  px-4 rounded-xl"
+              style={{ border: "1px solid black" }}
+            >
+              <div>
+                <h4 className="text-lg">Sort by</h4>
+              </div>
+              <div className="flex gap-5 items-center   ">
+                <div className="flex ">
+                  <p className="text-lg">Price</p>
+                  <div className="flex flex-col justify-center m-2">
+                    <button>
+                      <FaSortUp />
+                    </button>
+                    <button>
+                      <FaSortDown />
+                    </button>
+                  </div>
+                </div>
+                <div className="flex">
+                  <p className="text-lg">Rating</p>
+                  <div className="flex flex-col justify-center m-2">
+                    <button>
+                      <FaSortUp />
+                    </button>
+                    <button>
+                      <FaSortDown />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-3 items-center">
+                <MdViewList size={"2rem"} />
+                <MdViewModule size={"2rem"} />
+              </div>
+            </div>
+            <div>
+              <div>
+                <SearchListItem></SearchListItem>
+              </div>
+            </div>
           </div>
         </div>
       </div>
