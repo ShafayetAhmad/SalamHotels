@@ -4,7 +4,10 @@ import { FaSortDown, FaSortUp } from "react-icons/fa6";
 import SearchListItem from "../../layout/SearchListItem/SearchListItem";
 import GreenBtn from "../../common/GreenBtn/GreenBtn";
 import SearchGridItem from "../../layout/SearchGridItem/SearchGridItem";
+import { useState } from "react";
 const FindYourStay = () => {
+  const [listStyle, setListStyle] = useState("list");
+
   return (
     <div>
       <PageHeader
@@ -108,18 +111,41 @@ const FindYourStay = () => {
                 </div>
               </div>
               <div className="flex gap-3 items-center">
-                <MdViewList size={"2rem"} />
-                <MdViewModule size={"2rem"} />
+                <button
+                  className=""
+                  onClick={() => {
+                    setListStyle("list");
+                  }}
+                >
+                  <MdViewList size={"2rem"} />
+                </button>
+                <button
+                  onClick={() => {
+                    setListStyle("grid");
+                  }}
+                >
+                  <MdViewModule size={"2rem"} />
+                </button>
               </div>
             </div>
             <div>
               <div>
-                <SearchListItem></SearchListItem>
+                {listStyle == "list" && (
+                  <div>
+                    <SearchListItem></SearchListItem>
+                    <SearchListItem></SearchListItem>
+                    <SearchListItem></SearchListItem>
+                  </div>
+                )}
               </div>
               <div className="flex w-full justify-between">
-                <SearchGridItem></SearchGridItem>
-                <SearchGridItem></SearchGridItem>
-                <SearchGridItem></SearchGridItem>
+                {listStyle == "grid" && (
+                  <div className="flex">
+                    <SearchGridItem></SearchGridItem>
+                    <SearchGridItem></SearchGridItem>
+                    <SearchGridItem></SearchGridItem>
+                  </div>
+                )}
               </div>
             </div>
           </div>
